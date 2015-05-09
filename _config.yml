@@ -4,7 +4,7 @@ email: admin@jasonanton.com
 description: > # this means to ignore newlines until "baseurl:"
   This is quite simply--and modestly--the absolute best site in the entire world.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://jasonanton.com" # the base hostname & protocol for your site
+url: "http://www.jasonanton.com" # the base hostname & protocol for your site
 twitter_username: revjtanton
 github_username:  revjtanton
 
