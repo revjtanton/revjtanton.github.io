@@ -11,3 +11,6 @@ Hey Jekyll.  Wow!  I like it.  Simple to write posts, simple to setup.  I am no 
 {% endhighlight %}
 
 Pretty simple.  Jekyll seems easy to use.  Fantastic.
+
+/*EDIT*/
+Check this out: [VR Camden Yards](http://www.jasonanton.com/vr_pages/opening-day.html "VR Camden Yards").  This is a VR panorama of opening day 2015 at Oriole Park at Camden Yards.  It was taken after the game close to the field.  This is best viewed with [Google Cardboard](https://www.google.com/get/cardboard/ "Google Cardboard") and is using [WebVR](https://github.com/povdocs/webvr-starter-kit/ "WebVR")
