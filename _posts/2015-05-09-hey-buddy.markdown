@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Hey Buddy!"
+date:   2015-05-09 11:32:08
+categories: jekyll
+---
+Hey Jekyll.  Wow!  I like it.  Simple to write posts, simple to setup.  I am no front-end person, I have no understanding of prettiness on webpages, so this site will stay basic.  If I ever post another blog here then I can use syntax highlighting like this:
+
+{% highlight php %}
+<?php echo 'hey buddy!' ?>
+{% endhighlight %}
+
+Pretty simple.  Jekyll seems easy to use.  Fantastic.
