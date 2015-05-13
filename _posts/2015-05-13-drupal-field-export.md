@@ -116,6 +116,8 @@ function example_module_update_7100() {
       ),
     ),
   );
+
+  field_create_field($field);
   
   $instance = array(
     'label' => 'Example',
