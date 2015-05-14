@@ -171,4 +171,4 @@ function example_module_update_7100() {
 
 {% endhighlight %}
 
-And that's pretty much it.  On your local restore a sql-dump from before you added the field via the GUI and then run drush updatedb.  After that, assuming it's all good, then push to your other environments and updatedb.  Enjoy you're new field. 
+And that's pretty much it.  On your local restore a sql-dump from before you added the field via the GUI and then run drush updatedb.  After that, assuming it's all good, then push to your other environments and updatedb.  Enjoy your new field. 
