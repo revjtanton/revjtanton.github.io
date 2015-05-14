@@ -14,9 +14,9 @@ First make sure you have [devel](https://www.drupal.org/project/devel "devel") i
 {% highlight php %}
 <?php
 
-$entity_type = 'node';
-$field_name = 'field_event_reg_sub_text';
-$bundle_name = 'event';
+$entity_type = '';
+$field_name = 'field_';
+$bundle_name = '';
 
 $info_config = field_info_field($field_name);
 $info_instance = field_info_instance($entity_type, $field_name, $bundle_name);
