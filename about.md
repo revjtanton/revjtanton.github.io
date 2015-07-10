@@ -3,7 +3,6 @@ layout: page
 title: About
 permalink: /about/
 ---
-
 My name is Jason Anton.  I'm a software and web developer.  Over the course of my career I've made things that people use and a lot more things that nobody has ever used.  I also play drums.  A few people have herd me play drums but a lot more people haven't.
 
 The purpose of this website is two-fold:
