@@ -153,3 +153,6 @@ Our final step is to create the tpl, copy the contents from the original ds-1col
 {% endhighlight %}
 
 And that's it!  clear some caches, enable your module if you haven't already, and you'll see that your title will change on your Asset Document when you use the tag in content.
+
+*UPDATE*
+Ok so there is one last little thing you need to do that I forgot to mention and it just cost me like 3 hours because I'm an idiot.  You need to go to Structure>Asset types>>Document>Manage display.WYSIWYG MODES and then check the box next to your new view mode, then save.  That's it!
