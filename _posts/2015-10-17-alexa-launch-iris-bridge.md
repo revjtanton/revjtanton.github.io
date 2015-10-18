@@ -85,7 +85,7 @@ IrisConnect.prototype.HomeMode = function(response) {
 				var options = {
 				  host: 'www.irissmarthome.com',
 				  port: 443,
-				  path: '/v5/users/revjtanton/hubs/only/profile',
+				  path: '/v5/users/' + USERNAME + '/hubs/only/profile',
 				  method: 'PUT',
 				  headers: {
 					  'Content-Type': 'application/x-www-form-urlencoded',
@@ -145,7 +145,7 @@ var post_data = querystring.stringify({
 var options = {
   host: 'www.irissmarthome.com',
   port: 443,
-  path: '/v5/users/revjtanton/hubs/only/profile',
+  path: '/v5/users/' + USERNAME + '/hubs/only/profile',
   method: 'PUT',
   headers: {
 	  'Content-Type': 'application/x-www-form-urlencoded',
