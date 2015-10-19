@@ -38,11 +38,8 @@ I'm passing *response* along for Alexa to say something when our request is done
 Anyway moving on to *IrisSkill.js*.  This was my first time working with Node.js so my code is probably not great, but it works.  Instead of disecting it piece by piece I'll just put it all out there.  Here you go!
 
 {% highlight javascript %}/**
- * This is the meat of what connects to IrisConnect
- */
- 
 /**
- * Set your username and password
+ * Here we're setting some values for use later.  These are your Iris credentials and some stuff we're pulling in from Node
  */
 var USERNAME = '';
 var PASSWORD = '';
@@ -50,25 +47,65 @@ var PASSWORD = '';
 var https = require('https');
 var querystring = require('querystring');
 
+/**
+ * Declaring our IrisConnect
+ */
 function IrisConnect() {
 	
 };
 
-// Setting HOME mode.
-IrisConnect.prototype.HomeMode = function(response) {
-		var post_data = querystring.stringify({
-			username: USERNAME,
-			password: PASSWORD,
-		});
+//This is the login portion.  This will return the ApiSession value for use with other requests.  
+IrisConnect.prototype.Login = function(callback) {
+	var post_data = querystring.stringify({
+		username: USERNAME,
+		password: PASSWORD,
+	});
 
+	var options = {
+	  host: 'www.irissmarthome.com',
+	  port: 443,
+	  path: '/v5/login',
+	  method: 'POST',
+	  headers: {
+		  'Content-Type': 'application/x-www-form-urlencoded',
+		  'Content-Length': Buffer.byteLength(post_data)
+	  }
+	};
+
+	var req = https.request(options, function(res) {
+		res.setEncoding('utf8');
+		console.log(res.statusCode);
+		res.on('data', function(d) {
+			de = JSON.parse(d);
+			callback(de.ApiSession);
+		});
+	});
+	req.write(post_data);
+	req.end();
+
+	req.on('error', function(e) {
+	  console.error(e);
+	});
+};
+
+// This will set the HOME mode.  Change HOME to AWAY or NIGHT to set those.  
+IrisConnect.prototype.SetHome = function(callback) {
+	var a = IrisConnect.prototype.Login(function(result) {
+		ApiSession = result;
+		
+		var post_data = querystring.stringify({
+			profile: 'HOME'
+		});
+			
 		var options = {
 		  host: 'www.irissmarthome.com',
 		  port: 443,
-		  path: '/v5/login',
-		  method: 'POST',
+		  path: '/v5/users/' + USERNAME + '/hubs/only/profile',
+		  method: 'PUT',
 		  headers: {
 			  'Content-Type': 'application/x-www-form-urlencoded',
-			  'Content-Length': Buffer.byteLength(post_data)
+			  'Content-Length': Buffer.byteLength(post_data),
+			  'cookie': 'ApiSession=' + ApiSession
 		  }
 		};
 
@@ -77,32 +114,7 @@ IrisConnect.prototype.HomeMode = function(response) {
 			console.log(res.statusCode);
 			res.on('data', function(d) {
 				de = JSON.parse(d);
-				
-				var post_data = querystring.stringify({
-					profile: 'HOME'
-				});
-				
-				var options = {
-				  host: 'www.irissmarthome.com',
-				  port: 443,
-				  path: '/v5/users/' + USERNAME + '/hubs/only/profile',
-				  method: 'PUT',
-				  headers: {
-					  'Content-Type': 'application/x-www-form-urlencoded',
-					  'Content-Length': Buffer.byteLength(post_data),
-					  'cookie': 'ApiSession=' + de.ApiSession
-				  }
-				};
-				
-				var req = https.request(options, function(res) {
-					res.setEncoding('utf8');
-					console.log(res.statusCode);
-					res.on('data', function(d) {
-						response.tell("Success.","Success.");
-					});
-				});
-				req.write(post_data);
-				req.end();
+				callback(de);
 			});
 		});
 		req.write(post_data);
@@ -111,8 +123,10 @@ IrisConnect.prototype.HomeMode = function(response) {
 		req.on('error', function(e) {
 		  console.error(e);
 		});
+	});
 };
 
+// Exporting IrisConnect for use by index.js
 module.exports = IrisConnect;
 {% endhighlight %}
 
