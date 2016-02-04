@@ -22,12 +22,12 @@ permalink: /resume/
 
 ## Job Experience
 
-**CSRA**	3434 Washington Boulevard	Phone: 703-284-5000	*Senior Software Engineer*	07/2015 - current
+[**CSRA**](https://www.csra.com/)	3434 Washington Boulevard	Phone: 703-284-5000	*Senior Software Engineer*	07/2015 - current
 
 *    Drupal module development.
 *	Development work for The Department of Energy's Engergystar.gov website.
 
-**McMurry/TMG**	1129 20th Street Northwest #700, Washington, DC 20036	Phone: 202-337-7700	*PHP Engineer*	09/2014 - 07/2015
+[**McMurry/TMG**](http://manifest.com/)	1129 20th Street Northwest #700, Washington, DC 20036	Phone: 202-337-7700	*PHP Engineer*	09/2014 - 07/2015
 
 *    Developed a migration module extending the Migration module for Drupal.  This involved both a more traditional Drupal type of development, and a more advanced OOP type of Drupal development.   
 *    Developed varied solutions to many problems within the Drupal CMS.  These problems included, but were not limited to, javascript debugging, Twitter API debugging, and server configuration.  Developed and tested many custom modules to facilitate client needs,  These solutions included modules that would modify existing content, add custom analytics to specific items on a page, and various API integrations.Migrated a major client to the Acquia hosting platform.  This included the migration of the site, and adjustments for the differences in the hosting environments.  Work with a team to develop a series of modules to facilitate quicker Drupal development.  These modules leveraged Drupal’s Entity API to make classes to quickly create other modules without having redundant code.    Developed drush site install scripts to spot deploy clone sites with relative ease and quickness on Acquia hosted sites. 
@@ -46,13 +46,13 @@ permalink: /resume/
 *    Developed a Quickbooks “bridge” between systems.  This bridge was capable of taking updated data from Quickbooks and updating a parent system using ODBC, but it was also capable of finding updates on the parent system and updating Quickbooks.  Using a two way validation script I developed, the system was able to establish which system was more current, and keep both systems in-line with each other. 
 *    Developed a content management system framework from the ground up using PHP, MySQL, and Apache.  I was responsible for the design of the framework, development of modules within the framework, management of the framework, and leading the team of developers.  Using an Object Oriented Database design we were able to create a system of anything to anything associations.  In this system any data set was considered an object, and any object could associate to any other object at any time or at any place within the system.  Using RESTful calls to other modules the code was extremely dynamic and reusable.   
 
-**Unleashed Technologies**	10005 Old Columbia Road, Columbia, MD 21046	Phone: 410-864-8980	*Web Developer*	4/2012 – 7/2012  
+[**Unleashed Technologies**](https://www.unleashed-technologies.com/)	10005 Old Columbia Road, Columbia, MD 21046	Phone: 410-864-8980	*Web Developer*	4/2012 – 7/2012  
 
 *    Developed a mobile application for publications using Sencha Touch 2.  This application was to take an online publication (Drupal), parse it for use in a mobile app, and provide functions like user authentication, and offline access. 
 *    Involvement with a large scale migration project for a major utility publication.  My involvement was migrating over 3000 legacy Cold Fusion articles in poorly formatted HTML into a Drupal 7 environment dynamically.  My work involved parsing the HTML looking for patterns as defined by regular expression, then dumping that parsed document into a custom SQL table for reference.  I then created a boot-strap application in Drupal to read the SQL and put the nodes in Drupal. 
 *    Work was done on various other projects relating to Drupal 7, migrations, and integration.  
 
-**Accuvant Inc.**	 7467 Ridge Road, Haonver, Maryland 21076	Phone: 410-855-8847	*Development Consultant*	12/2009 – 4/2012  
+[**Accuvant Inc.**](https://www.optiv.com/)	 7467 Ridge Road, Haonver, Maryland 21076	Phone: 410-855-8847	*Development Consultant*	12/2009 – 4/2012  
 
 *    Extensive work in Drupal and Pressflow Drupal.  We made high-performance, complicated sites for clients such as McAfee, ArcSight, Playworld, and the 
 PDGA.  This work included coding custom themes and modules, as well as server administration and performance tweeking. 
@@ -62,14 +62,14 @@ PDGA.  This work included coding custom themes and modules, as well as server ad
 *    Management of Amazon cloud servers.  This includes EC2 using EBS volumes, RDS database servers, S3 file management, and load balancing configurations.  The web server technology living on those servers included Apache as well as Nginx with Fast-CGI.  
 *    Extensive web server administration duties on mostly Linux, but also Windows, servers. This included LAMP or IIS configuration but also aggressive caching techniques to improve site performances.  Technologies used included Fast-CGI, NGINX, Apache, Varnish, Memcached, APC, Hudson, Apache Solr, etc.
 
-**Iowa Foundation for Medical Care**	6518 Meadowridge Road, Elkridge, Maryland 21075	Phone: 443-561-3316	*Programmer*	1/2008 – 12/2009 
+[**Iowa Foundation for Medical Care**](http://www.telligen.com/)	6518 Meadowridge Road, Elkridge, Maryland 21075	Phone: 443-561-3316	*Programmer*	1/2008 – 12/2009 
  
 *    Review, analyze, and modifies programming systems including encoding, testing, debugging in PL/SQL Developer and Oracle systems tools, and documenting programs.  
 *    Primary responsibilities included coding, documenting and testing analytic modules using PL/SQL (Oracle) for use in the Physicians Quality Reporting Initiative (PQRI) part of Medicaid and Medicare. Code was in compliance with the CMS (Center for Medicaid/Medicare Services) Information Security Acceptable Risk Safeguards (ARS) and documentation in compliance with Capability Maturity Model Integration (CMMI) level 3 accreditation.  The application that was managed was capable of connecting to multipule secure database environments, migrate the data to our secure servers, calculate PQRI requirements on the data, and then transmit that data to the Center of Medicaid/Medicare Services servers.  
 *    Internship project: designed and administered an intranet WAMPP server for use with SugarCRM and specific/ custom modules incorporating a fresh and self-made front-end GUI that could be used for cloud computing. This application was 
 to work similarly to Microsoft Web Access, however, in addition it integrated certain "Help Desk" and timesheet functionalities.
 
-**QVC**	300 NW Peacock Lane, Port St. Lucie, Florida 34986	Phone: 772-873-4300  *E-Services*	9/2006 – 6/2007
+[**QVC**](http://www.qvc.com/)	300 NW Peacock Lane, Port St. Lucie, Florida 34986	Phone: 772-873-4300  *E-Services*	9/2006 – 6/2007
   
 *    Provided online customer service and technical help to customers
 
