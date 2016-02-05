@@ -1,8 +1,8 @@
 # Site settings
-title: JasonAnton.com
+title: Jason Anton
 email: admin@jasonanton.com
 description: > # this means to ignore newlines until "baseurl:"
-  This is quite simply--and modestly--the absolute best site in the entire world.
+  Failing in every attempt at masonry since 2004.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.jasonanton.com" # the base hostname & protocol for your site
 twitter_username: revjtanton
