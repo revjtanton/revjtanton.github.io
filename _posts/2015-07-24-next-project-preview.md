@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "My next side project"
+permalink: /mean/my-next-side-project/
 date:   2015-07-24 22:19:00
 categories: mean
 ---

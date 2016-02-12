@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Update Drupal in Batches"
+permalink: /drupal/update-drupal-in-batches/
 date:   2016-02-03 10:30:00
 categories: drupal
 tags: [hook_update, batch processing]

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Exporting Drupal Node Fields"
+permalink: /drupal/exporting-drupal-node-fields/
 date:   2015-05-13 15:21:00
 categories: drupal
 ---

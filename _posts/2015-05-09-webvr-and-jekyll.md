@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "WebVR and Jekyll"
+permalink: /jekyll/webvr-and-jekyll/
 date:   2015-05-09 15:07:00
 categories: jekyll
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Display Suite and the Asset Module"
+permalink: /drupal/display-suite-and-the-asset-module/
 date:   2015-07-10 09:45:00
 categories: drupal
 ---

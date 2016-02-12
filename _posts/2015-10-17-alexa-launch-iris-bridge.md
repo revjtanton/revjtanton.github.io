@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Alexa, launch Iris Bridge..."
+permalink: /node/alexa-launch-iris-bridge/
 date:   2015-10-17 14:19:00
 categories: node
 tags: [alexa, iris]
