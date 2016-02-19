@@ -7,8 +7,9 @@
     <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">
         <ul class="contact-list">
-          <li>{{ site.title }}</li>
+          <li>Contact Me</li>
           <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+		  <li><a href="https://fichron.com">Fictional Chronology</a></li>
         </ul>
       </div>
 
@@ -40,13 +41,15 @@
 
               <span class="username">{{ site.twitter_username }}</span>
             </a>
-          </li>
           {% endif %}
-        </ul>
+		  <li><i class="fa fa-twitch "></i>&nbsp;<a href="http://www.twitch.tv/revjtanton">revjtanton</a></li>
+		  <li><i class="icon-youtube "></i>&nbsp;<a href="https://www.youtube.com/user/revjtanton">revjtanton</a></li>
+		</ul>
       </div>
 
       <div class="footer-col  footer-col-3">
         <p class="text">{{ site.description }}</p>
+        <p>JasonAnton.com &dash; Copyright &copy; {{ site.time | date: '%Y' }}</p>
       </div>
     </div>
 
