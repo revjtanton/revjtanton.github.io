@@ -1,0 +1,86 @@
+---
+layout: nz
+---
+
+<ul id="connect">
+  <li>
+    <a href="/">jasonanton.com</a>
+  </li>
+</ul>
+
+<div class="loading-container">
+  <div class="pulse"></div>
+</div>
+
+<div id="slides">
+  <ul class="slides-container">
+    {% for image in site.static_files %}
+      {% if image.path contains 'nz/rotorua' %}
+        <li>
+          <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+          <div class="container">
+            <h1>Rotorua</h1>
+          </div>
+        </li>
+      {% endif %}
+    {% endfor %}
+    {% for image in site.static_files %}
+      {% if image.path contains 'nz/hobbiton' %}
+        <li>
+          <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+          <div class="container">
+            <h1>Hobbiton</h1>
+          </div>
+        </li>
+      {% endif %}
+    {% endfor %}
+    {% for image in site.static_files %}
+      {% if image.path contains 'nz/wellington' %}
+        <li>
+          <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+          <div class="container">
+            <h1>Wellington</h1>
+          </div>
+        </li>
+      {% endif %}
+    {% endfor %}
+    {% for image in site.static_files %}
+      {% if image.path contains 'nz/milfordsound' %}
+        <li>
+          <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+          <div class="container">
+            <h1>Milford Sound</h1>
+          </div>
+        </li>
+      {% endif %}
+    {% endfor %}
+    {% for image in site.static_files %}
+      {% if image.path contains 'nz/queenstown' %}
+        <li>
+          <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+          <div class="container">
+            <h1>Queenstown</h1>
+          </div>
+        </li>
+      {% endif %}
+    {% endfor %}
+    {% for image in site.static_files %}
+      {% if image.path contains 'nz/mtcook' %}
+        <li>
+          <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+          <div class="container">
+            <h1>Mt. Cook</h1>
+          </div>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  <nav class="slides-navigation">
+    <a href="#" class="next">
+      <i class="icon-chevron-right"></i>
+    </a>
+    <a href="#" class="prev">
+      <i class="icon-chevron-left"></i>
+    </a>
+  </nav>
+</div>
