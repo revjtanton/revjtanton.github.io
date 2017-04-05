@@ -8,7 +8,7 @@ $(document).ready(function() {
   $('#slides').superslides({
     slide_easing: 'easeInOutCubic',
     slide_speed: 800,
-    pagination: true,
+    pagination: false,
     hashchange: true,
     scrollable: true
   });
